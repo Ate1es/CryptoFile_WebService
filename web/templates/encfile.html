@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+	<form action="http://118.221.69.16:5000/fileupload" method="POST" enctype="multipart/form-data">
+		암호화할 파일 : <input type="file" name="file" /><br/>
+		개인 암호 비밀번호 : <input type="passward" name="pw" />
+		<input type="submit" />
+	</form>
+</body>
+</html>

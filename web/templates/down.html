@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+	<h1>DownLoad encrypted File</h1>
+	<h3>암호화한 파일 이름을 입력해주세요 [ 확장자 포함 ]</h3>
+	<form method="POST" action="downfile">
+		<input type="text" name="filename" />
+        <button type="submit">Download!</button>
+    </form>
+	<a href="/">
+	<button type="button">홈으로 가기</button>
+	</a>
+</body>
+</html>
